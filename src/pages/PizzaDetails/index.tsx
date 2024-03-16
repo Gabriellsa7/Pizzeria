@@ -5,7 +5,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import SectionTypesPizza from "./components/SectionTypesPizza";
 // import SectionTotalButton from "./components/SectionTotalButton";
 import Types from "./components/SectionTypesPizza/components/Types";
-import { SendCartProvider } from "../../components/context/productsSendContext";
+// import { SendCartProvider } from "../../components/context/productsSendContext";
 // import { types } from "../Home/components/Recomended/mocks";
 import { useState } from "react";
 
@@ -21,7 +21,7 @@ interface IShoppingCart {
   quantity: number;
 }
 
-export default function PizzaDetails(id: number) {
+export default function PizzaDetails() {
   const navigate = useNavigate();
 
   const [shoppingCart, setShoppingCart] = useState<IShoppingCart[]>([]);
@@ -130,7 +130,7 @@ export default function PizzaDetails(id: number) {
       <S.SectionBottom>
         <SectionTypesPizza />
         <Types />
-        <SendCartProvider onSend={() => onSend(id)} />
+        {/* <SendCartProvider onSend={() => onSend(id)} /> */}
         {/* <SectionTotalButton /> */}
       </S.SectionBottom>
     </S.Container>

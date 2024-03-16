@@ -16,7 +16,7 @@ import Icons from "../../components/Icon";
 import { useTheme } from "styled-components";
 import logo2 from "../../assets/Logo2.png";
 
-export default function Home({ token }) {
+export default function Home() {
   const theme = useTheme();
 
   const navigate = useNavigate();

@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: ${({ theme }) => theme.color.background};
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 `;
 
 export const TextIconContainerHeader = styled.div`
